@@ -8,11 +8,11 @@ import LoginSmallCard from "./LoginSmallCard";
 const LoginContainer = () => {
   return (
     <div className="py-[80px]">
-      <div className="">
+      <div className="container mx-auto">
         {/* Backup Container */}
         {/* Card Container */}
         <div className="flex justify-center">
-          <div className="bg-LoginCard w-4/12 py-8 rounded-xl text-center">
+          <div className="bg-LoginCard w-5/12 py-8 rounded-xl text-center">
             {/* Heading */}
             <div className="flex gap-1 items-center justify-center">
               <h1 className="text-white text-4xl font-semibold">
@@ -48,7 +48,7 @@ const LoginContainer = () => {
             </div>
           </div>
         </div>
-        <div className="content w-4/12 mt-12 mb-[115px] mx-auto rounded-xl text-center">
+        <div className="content w-5/12 mt-12 mb-[115px] mx-auto rounded-xl text-center">
           {/* Calling the components */}
           <LoginSmallCard img={User} number="7" type="Users" />
           <LoginSmallCard img={member} number="7" type="Members" />
