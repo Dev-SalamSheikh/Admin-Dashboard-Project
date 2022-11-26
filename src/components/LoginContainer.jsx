@@ -12,15 +12,13 @@ const LoginContainer = () => {
         {/* Backup Container */}
         {/* Card Container */}
         <div className="flex justify-center">
-          <div className="bg-LoginCard w-4/12 px-10 py-8 rounded-xl text-center">
+          <div className="bg-LoginCard w-4/12 py-8 rounded-xl text-center">
             {/* Heading */}
-            <div className="relative">
+            <div className="flex gap-1 items-center justify-center">
               <h1 className="text-white text-4xl font-semibold">
                 Backup Discord Server Members{" "}
               </h1>
-              <span className="mt-3 absolute right-0 top-3">
-                <img src={Dot} alt="dot" className="w-[10px]" />
-              </span>
+              <img src={Dot} alt="dot" className="w-[10px] h-[10px] mt-3" />
             </div>
 
             {/* Line */}
@@ -29,9 +27,9 @@ const LoginContainer = () => {
             </div>
 
             {/* Paragraph */}
-            <div className="px-8">
+            <div className="px-4">
               <p
-                className="text-textGray text-[17px]"
+                className="text-textGray text-[18px]"
                 //   style={{ lineHeight: "29px" }}
               >
                 Add your server members to new server or back to the existing
@@ -40,7 +38,7 @@ const LoginContainer = () => {
             </div>
 
             {/* Buttons */}
-            <div className="px-10 flex justify-center gap-8 mt-14">
+            <div className="flex justify-center gap-8 mt-12">
               <button className="bg-LoginNavbarBtn text-white font-semibold py-[6px] outline-none border-none px-8 rounded-md">
                 <span>Add to Discord</span>
               </button>
