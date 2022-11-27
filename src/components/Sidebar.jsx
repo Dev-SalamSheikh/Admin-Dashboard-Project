@@ -12,7 +12,7 @@ import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div
-      className="min-h-screen text-white relative"
+      className="min-h-screen text-white"
       style={{
         background:
           "linear-gradient(179.66deg, #0C0C10 80.78%, #5E17EB 125.88%)",
@@ -124,11 +124,9 @@ const Sidebar = () => {
 
       {/* User Card */}
       <div
-        className="rounded-lg py-2 px-4 absolute bottom-5 w-[85%]"
+        className="rounded-lg py-2 px-4 w-[80%] mx-auto mt-16"
         style={{
           background: "rgba(34, 40, 44, 0.7)",
-          left: "50%",
-          transform: "translateX(-50%)",
           boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.21)",
         }}
       >
