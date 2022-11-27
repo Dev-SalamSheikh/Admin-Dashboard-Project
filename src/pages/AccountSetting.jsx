@@ -1,16 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
 const AccountSetting = () => {
+  const [hide, setHide] = useState(true);
   return (
-    <div className="flex">
-      <div className="w-[20%]">
-        <Sidebar />
-      </div>
-      <div className="w-[80%]">
-        <Navbar />
-      </div>
+    <div className="flex justify-between">
+      <Sidebar hide={hide} setHide={setHide} />
+      <Navbar hide={hide} setHide={setHide} />
     </div>
   );
 };

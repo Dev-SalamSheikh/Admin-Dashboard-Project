@@ -9,10 +9,12 @@ import threeDot from "../assets/3dot.png";
 import avatar from "../assets/sidebarAvatar.png";
 import { NavLink } from "react-router-dom";
 
-const Sidebar = () => {
+const Sidebar = ({ hide, setHide }) => {
   return (
     <div
-      className="min-h-screen text-white"
+      className={`min-h-screen min-w-[20%] text-white duration-300 scroll-smooth ${
+        hide ? "ml-[-100%]" : ""
+      }`}
       style={{
         background:
           "linear-gradient(179.66deg, #0C0C10 80.78%, #5E17EB 125.88%)",
