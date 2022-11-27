@@ -60,3 +60,16 @@
   align-items: center;
   gap: 10px;
 }
+
+.active > div {
+  background: rgba(0, 193, 202, 0.1);
+  border-radius: 5px;
+}
+
+.active > div > * {
+  color: #00c1ca !important;
+}
+
+.active > div img {
+  color: #00c1ca !important;
+}

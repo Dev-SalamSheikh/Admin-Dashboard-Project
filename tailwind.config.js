@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         textGray: "#999999",
         buttonBorder: "#00C1CA",
+        cardText: "#737373",
       },
     },
   },

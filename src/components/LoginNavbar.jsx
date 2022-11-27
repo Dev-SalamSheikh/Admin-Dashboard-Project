@@ -1,5 +1,6 @@
 import Logo from "../assets/logo.png";
 import Arrow from "../assets/arrow.png";
+import { NavLink } from "react-router-dom";
 
 const LoginNavbar = () => {
   return (
@@ -30,14 +31,16 @@ const LoginNavbar = () => {
           </div>
 
           {/* Button */}
-          <button
-            style={{
-              filter: "drop-shadow(0px 4px 19px rgba(0, 0, 0, 0.43))",
-            }}
-            className="bg-LoginNavbarBtn text-white py-[9px] px-6 flex items-center gap-2 rounded-tl-2xl rounded-br-2xl text-[15px] font-bold"
-          >
-            LOGIN <img src={Arrow} alt="btn_arrow" className="w-4" />
-          </button>
+          <NavLink to="/">
+            <button
+              style={{
+                filter: "drop-shadow(0px 4px 19px rgba(0, 0, 0, 0.43))",
+              }}
+              className="bg-LoginNavbarBtn text-white py-[9px] px-6 flex items-center gap-2 rounded-tl-2xl rounded-br-2xl text-[15px] font-bold"
+            >
+              LOGIN <img src={Arrow} alt="btn_arrow" className="w-4" />
+            </button>
+          </NavLink>
         </div>
       </div>
     </div>
