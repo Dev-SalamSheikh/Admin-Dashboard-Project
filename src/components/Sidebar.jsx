@@ -9,7 +9,7 @@ import threeDot from "../assets/3dot.png";
 import avatar from "../assets/sidebarAvatar.png";
 import { NavLink } from "react-router-dom";
 
-const Sidebar = ({ hide, setHide }) => {
+const Sidebar = ({ hide }) => {
   return (
     <div
       className={`min-h-screen min-w-[20%] text-white duration-300 scroll-smooth ${

@@ -1,6 +1,6 @@
 import hamburger from "../assets/hamburger.png";
 
-const Navbar = ({ hide, setHide }) => {
+const Navbar = ({ hideandseek }) => {
   return (
     <div
       className="py-3 px-8 w-full h-max"
@@ -15,7 +15,7 @@ const Navbar = ({ hide, setHide }) => {
         <div>
           <div
             className="bg-[#5E17EB] w-max p-2 cursor-pointer"
-            onClick={() => setHide(!hide)}
+            onClick={hideandseek}
           >
             <img src={hamburger} alt="hamburger" />
           </div>

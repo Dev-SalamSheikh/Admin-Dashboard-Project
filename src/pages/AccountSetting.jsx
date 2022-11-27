@@ -4,10 +4,13 @@ import Sidebar from "../components/Sidebar";
 
 const AccountSetting = () => {
   const [hide, setHide] = useState(true);
+  const hideandseek = () => {
+    setHide(!hide);
+  };
   return (
     <div className="flex justify-between">
-      <Sidebar hide={hide} setHide={setHide} />
-      <Navbar hide={hide} setHide={setHide} />
+      <Sidebar hide={hide} />
+      <Navbar hideandseek={hideandseek} />
     </div>
   );
 };
