@@ -1,15 +1,17 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
 const ServerSettings = () => {
+  const [hide, setHide] = useState(false);
+  const hideandseek = () => {
+    setHide(!hide);
+  };
+
   return (
-    <div className="flex min-h-screen">
-      <div className="w-[20%]">
-        <Sidebar />
-      </div>
-      <div className="w-full">
-        <Navbar />
-      </div>
+    <div className="flex justify-between">
+      <Sidebar hide={hide} />
+      <Navbar hideandseek={hideandseek} />
     </div>
   );
 };

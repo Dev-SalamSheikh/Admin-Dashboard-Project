@@ -12,7 +12,7 @@ import { NavLink } from "react-router-dom";
 const Sidebar = ({ hide }) => {
   return (
     <div
-      className={`min-h-screen min-w-[20%] text-white duration-300 scroll-smooth ${
+      className={`min-h-screen -w-[20%] text-white duration-300 scroll-smooth ${
         hide ? "ml-[-100%]" : ""
       }`}
       style={{
