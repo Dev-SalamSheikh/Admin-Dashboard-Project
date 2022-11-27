@@ -124,7 +124,7 @@ const Sidebar = () => {
 
       {/* User Card */}
       <div
-        className="rounded-lg py-2 px-4 w-[80%] mx-auto mt-16"
+        className="rounded-lg py-2 px-4 mx-6 mt-16"
         style={{
           background: "rgba(34, 40, 44, 0.7)",
           boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.21)",
@@ -150,7 +150,7 @@ const Sidebar = () => {
           </div>
 
           {/* Emails */}
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center gap-2">
             <span className="text-[13px] text-cardText">bessiec@gmail.com</span>
             <span className="text-buttonBorder"> | </span>
             <span className="text-[13px] text-cardText">websitename.com</span>
