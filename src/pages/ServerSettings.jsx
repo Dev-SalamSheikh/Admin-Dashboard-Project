@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Navbar from "../components/Navbar";
+import ServerContent from "../components/ServerContent";
 import Sidebar from "../components/Sidebar";
 
 const ServerSettings = () => {
@@ -11,7 +11,7 @@ const ServerSettings = () => {
   return (
     <div className="flex justify-between">
       <Sidebar hide={hide} />
-      <Navbar hideandseek={hideandseek} />
+      <ServerContent hideandseek={hideandseek} />
     </div>
   );
 };
