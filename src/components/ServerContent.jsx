@@ -2,6 +2,7 @@ import CardLine from "../assets/cardLine.png";
 import Header from "./Header";
 import Navbar from "./Navbar";
 import CopyrightFooter from "./CopyrightFooter";
+import circle from "../assets/circle.png";
 import { useState } from "react";
 
 const ServerContent = ({ hideandseek }) => {
@@ -17,7 +18,7 @@ const ServerContent = ({ hideandseek }) => {
   };
 
   return (
-    <div className="bg-LoginContainer w-full min-h-screen">
+    <div className="bg-LoginContainer w-full min-h-screen relative overflow-x-hidden">
       {/* Calling Navbar */}
       <Navbar hideandseek={hideandseek} />
 
@@ -95,6 +96,11 @@ const ServerContent = ({ hideandseek }) => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Shapes */}
+        <div className="absolute right-[-13%] top-[30%] rotate-45">
+          <img src={circle} alt="circle" />
         </div>
 
         {/* Footer */}
