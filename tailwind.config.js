@@ -12,6 +12,8 @@ module.exports = {
         textGray: "#999999",
         buttonBorder: "#00C1CA",
         cardText: "#737373",
+        lightPink: "#5E17EB",
+        HeaderTheme: "#00C4CF",
       },
     },
   },

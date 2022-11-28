@@ -33,7 +33,7 @@ const Navbar = ({ hideandseek }) => {
               border: "1px solid rgba(255, 255, 255, 0.8)",
               borderRadius: "5px",
               width: "max-content",
-              padding: "3px 10px",
+              padding: "0 12px",
             }}
           >
             <img src={search} alt="search_icon" className="w-5" />
@@ -46,7 +46,7 @@ const Navbar = ({ hideandseek }) => {
               border: "1px solid rgba(255, 255, 255, 0.8)",
               borderRadius: "5px",
               width: "max-content",
-              padding: "2px 10px",
+              padding: "0 12px",
             }}
           >
             <img src={notification} alt="search_icon" className="w-5" />
@@ -59,7 +59,7 @@ const Navbar = ({ hideandseek }) => {
               border: "1px solid rgba(255, 255, 255, 0.8)",
               borderRadius: "5px",
               width: "max-content",
-              padding: "3px 10px",
+              padding: "0 12px",
             }}
           >
             <img src={message} alt="search_icon" className="w-5" />
