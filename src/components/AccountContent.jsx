@@ -6,7 +6,7 @@ import Unlock from "../assets/unlock.png";
 import circle from "../assets/circle.png";
 import { useState } from "react";
 
-const ServerContent = ({ hideandseek }) => {
+const AccountContent = ({ hideandseek }) => {
   const [accountInfo, setAccountInfo] = useState({
     username: "",
     subExpire: "",
@@ -51,7 +51,7 @@ const ServerContent = ({ hideandseek }) => {
 
         {/* Cards */}
         <div className="content_container p-16">
-          <div className="card w-8/12 mx-auto my-16 px-6 py-8 rounded-md">
+          <div className="card w-9/12 mx-auto my-16 px-6 py-8 rounded-md">
             <div className="card_content flex-col"></div>
             <div className="relative z-[100]">
               {/* Heading */}
@@ -330,4 +330,4 @@ const ServerContent = ({ hideandseek }) => {
   );
 };
 
-export default ServerContent;
+export default AccountContent;

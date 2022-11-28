@@ -56,14 +56,18 @@ const Sidebar = ({ hide }) => {
           </NavLink>
 
           {/* Secoond */}
-          <div className="flex gap-3 items-center mx-4 px-4 py-[6px] my-2 cursor-pointer">
-            <img
-              src={SingleUser}
-              alt="dropdown_icon"
-              className="w-4 cursor-pointer"
-            />
-            <span className="text-base font-medium text-textGray">Members</span>
-          </div>
+          <NavLink to="/server/members">
+            <div className="flex gap-3 items-center mx-4 px-4 py-[6px] my-2 cursor-pointer">
+              <img
+                src={SingleUser}
+                alt="dropdown_icon"
+                className="w-4 cursor-pointer"
+              />
+              <span className="text-base font-medium text-textGray">
+                Members
+              </span>
+            </div>
+          </NavLink>
 
           {/* Third */}
           <div className="flex gap-3 items-center mx-4 px-4 py-[6px] my-2 cursor-pointer">
