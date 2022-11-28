@@ -126,7 +126,7 @@ const Sidebar = ({ hide }) => {
 
       {/* User Card */}
       <div
-        className="rounded-lg py-2 px-4 mx-6 mt-16 mb-8"
+        className="rounded-lg py-2 px-4 mx-6 mt-32 mb-8"
         style={{
           background: "rgba(34, 40, 44, 0.7)",
           boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.21)",

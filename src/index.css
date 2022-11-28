@@ -76,6 +76,7 @@
 
 .content_container {
   background-image: url("./assets/backgroundImage.png");
+  background-size: contain;
 }
 
 .content_container .card {

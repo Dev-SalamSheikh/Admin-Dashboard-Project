@@ -83,7 +83,7 @@ const ServerContent = ({ hideandseek }) => {
         </div>
 
         {/* Footer */}
-        <div>
+        <div className="mt-4">
           <CopyrightFooter />
         </div>
       </div>
