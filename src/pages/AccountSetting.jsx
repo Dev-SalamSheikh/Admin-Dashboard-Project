@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
+import AccountContent from "../components/AccountContent";
 import Sidebar from "../components/Sidebar";
 
 const AccountSetting = () => {
@@ -11,7 +11,7 @@ const AccountSetting = () => {
   return (
     <div className="flex justify-between">
       <Sidebar hide={hide} />
-      <Navbar hideandseek={hideandseek} />
+      <AccountContent hideandseek={hideandseek} />
     </div>
   );
 };

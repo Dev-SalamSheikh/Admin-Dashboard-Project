@@ -2,8 +2,20 @@ import CardLine from "../assets/cardLine.png";
 import Header from "./Header";
 import Navbar from "./Navbar";
 import CopyrightFooter from "./CopyrightFooter";
+import { useState } from "react";
 
 const ServerContent = ({ hideandseek }) => {
+  const [serverName, setServerName] = useState("");
+
+  // Onsubmit Handler
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (serverName.length >= 1) {
+      alert(`Successfully Created a server called "${serverName}"`);
+    }
+    setServerName("");
+  };
+
   return (
     <div className="bg-LoginContainer w-full min-h-screen">
       {/* Calling Navbar */}
@@ -38,7 +50,7 @@ const ServerContent = ({ hideandseek }) => {
 
               {/* Form */}
               <div className="">
-                <form>
+                <form onSubmit={submitHandler}>
                   <span
                     className="text-lg font-semibold"
                     style={{
@@ -59,6 +71,9 @@ const ServerContent = ({ hideandseek }) => {
                       placeholder="Enter Server Name"
                       className="w-full bg-transparent px-3 rounded-md outline-none border-none"
                       style={{ color: "rgb(255,255,255, 0.6)" }}
+                      value={serverName}
+                      onChange={(e) => setServerName(e.target.value)}
+                      required
                     />
                   </div>
 
