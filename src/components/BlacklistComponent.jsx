@@ -5,7 +5,7 @@ import VerifyCard from "./VerifyCard";
 import Buttons from "./Buttons";
 import { useState } from "react";
 
-const ServerMemberContent = ({ hideandseek }) => {
+const BlacklistComponent = ({ hideandseek }) => {
   const [page1, setPage1] = useState(true);
   const [page2, setPage2] = useState(false);
   const [page3, setPage3] = useState(false);
@@ -28,11 +28,14 @@ const ServerMemberContent = ({ hideandseek }) => {
   };
 
   const data = [
-    " 765452937982689235",
-    " 765452937982689235",
-    " 765452937982689235",
-    " 765452937982689235",
+    "775737749389739",
+    "775737749389740",
+    "775737749389741",
+    "775737749389742",
   ];
+
+  const user = ["User 1", "User 2", "User 3", "User 4"];
+
   return (
     <div className="bg-LoginContainer w-full min-h-screen relative overflow-x-hidden">
       {/* Calling Navbar */}
@@ -42,7 +45,7 @@ const ServerMemberContent = ({ hideandseek }) => {
       <div className="mx-10 mt-10">
         {/* Heading Components */}
         <div>
-          <Header category="Server." option="Members" />
+          <Header category="Server." option="Blacklist" />
         </div>
 
         {/* Upper Card */}
@@ -52,7 +55,7 @@ const ServerMemberContent = ({ hideandseek }) => {
             boxShadow: "0px 4px 21px rgba(0, 0, 0, 0.39)",
           }}
         >
-          <VerifyCard />
+          <VerifyCard notShow />
         </div>
 
         {/* Lower Card */}
@@ -70,7 +73,7 @@ const ServerMemberContent = ({ hideandseek }) => {
           {/* Informations */}
           <div className="mt-8 flex">
             {/* Left */}
-            <div className="w-full">
+            <div className="w-4/12">
               {/* Content Start */}
               <div>
                 {/* Header */}
@@ -82,14 +85,60 @@ const ServerMemberContent = ({ hideandseek }) => {
                       color: "rgba(255, 255, 255, 0.6)",
                     }}
                   >
-                    ID
+                    User
+                  </h2>
+                </div>
+                {/* Contents */}
+                {user.map((item, i) => (
+                  <div
+                    key={i}
+                    className="w-full py-5 pl-10 font-sans"
+                    style={{
+                      background: "#302F35",
+                      border: "1px solid rgba(255, 255, 255, 0.2)",
+                      borderTop: "none",
+                      boxShadow: "0px 2px 21px rgba(0, 0, 0, 0.09)",
+                    }}
+                  >
+                    <span
+                      style={{
+                        letterSpacing: "0.5px",
+                        color: "rgba(255, 255, 255, 0.6)",
+                      }}
+                    >
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Middle */}
+            <div className="w-4/12">
+              {/* Content Start */}
+              <div>
+                {/* Header */}
+                <div
+                  className="w-full text-center bg-lightPink py-3"
+                  style={{
+                    borderLeft: "1px solid rgba(255, 255, 255, 0.2)",
+                  }}
+                >
+                  <h2
+                    className="text-2xl font-bold"
+                    style={{
+                      letterSpacing: "0.5px",
+                      color: "rgba(255, 255, 255, 0.6)",
+                    }}
+                  >
+                    IP Address
                   </h2>
                 </div>
                 {/* Contents */}
                 {data.map((item, i) => (
                   <div
                     key={i}
-                    className="w-full py-5 pl-10"
+                    className="w-full py-5 pl-10 font-sans"
                     style={{
                       background: "#302F35",
                       border: "1px solid rgba(255, 255, 255, 0.2)",
@@ -111,7 +160,7 @@ const ServerMemberContent = ({ hideandseek }) => {
             </div>
 
             {/* Right */}
-            <div className="w-full">
+            <div className="w-4/12">
               {/* Header */}
               <div
                 className="w-full text-center bg-lightPink py-3 rounded-tr-lg"
@@ -318,4 +367,4 @@ const ServerMemberContent = ({ hideandseek }) => {
   );
 };
 
-export default ServerMemberContent;
+export default BlacklistComponent;

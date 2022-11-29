@@ -1,6 +1,6 @@
 import React from "react";
 
-const VerifyCard = () => {
+const VerifyCard = ({ notShow }) => {
   return (
     <div>
       {/* Upper */}
@@ -54,16 +54,18 @@ const VerifyCard = () => {
       <div className="mt-12 flex justify-between">
         {/* Left Button */}
         <div className="flex items-center gap-4">
-          <button
-            className="font-semibold px-4 py-2 rounded-md"
-            style={{
-              background: "rgba(0, 196, 207, 0.53)",
-              color: "rgb(255,255,255, 0.7)",
-              filter: "drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.3))",
-            }}
-          >
-            Recover member from old Hubify
-          </button>
+          {!notShow && (
+            <button
+              className="font-semibold px-4 py-2 rounded-md"
+              style={{
+                background: "rgba(0, 196, 207, 0.53)",
+                color: "rgb(255,255,255, 0.7)",
+                filter: "drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.3))",
+              }}
+            >
+              Recover member from old Hubify
+            </button>
+          )}
           <button
             className="font-semibold px-4 py-2 rounded-md"
             style={{
