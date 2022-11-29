@@ -12,7 +12,7 @@ import { NavLink } from "react-router-dom";
 const Sidebar = ({ hide }) => {
   return (
     <div
-      className={`min-h-screen w-[22%] text-white duration-300 scroll-smooth relative ${
+      className={`min-h-screen w-[20%] text-white duration-300 scroll-smooth relative ${
         hide ? "ml-[-100%]" : ""
       }`}
       style={{
@@ -132,7 +132,7 @@ const Sidebar = ({ hide }) => {
 
       {/* User Card */}
       <div
-        className="rounded-lg py-2 px-4 mx-6 mt-32 mb-8 absolute bottom-0"
+        className="rounded-lg py-2 px-4 mx-6 mt-32 mb-8"
         style={{
           background: "rgba(34, 40, 44, 0.7)",
           boxShadow: "0px 4px 30px rgba(0, 0, 0, 0.21)",
