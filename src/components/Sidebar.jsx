@@ -167,15 +167,18 @@ const Sidebar = ({ hide }) => {
 
         {/* Logout Button */}
         <div className="text-center mt-9 mb-6">
-          <button
-            className="py-[6px] px-6 font-medium"
-            style={{
-              background: "linear-gradient(90deg, #00C1CA 0%, #5E17EB 99.97%)",
-              borderRadius: "5px",
-            }}
-          >
-            Logout
-          </button>
+          <NavLink to="/">
+            <button
+              className="py-[6px] px-6 font-medium"
+              style={{
+                background:
+                  "linear-gradient(90deg, #00C1CA 0%, #5E17EB 99.97%)",
+                borderRadius: "5px",
+              }}
+            >
+              Logout
+            </button>
+          </NavLink>
         </div>
       </div>
     </div>
