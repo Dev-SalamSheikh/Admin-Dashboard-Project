@@ -24,8 +24,8 @@ const UpgradeContent = ({ hideandseek }) => {
         </div>
 
         {/* Cards */}
-        <div className="content_container px-16">
-          <div className="w-8/12 mx-auto my-16 px-16 pt-24 pb-24 rounded-md">
+        <div className="content_container px-8">
+          <div className="w-8/12 mx-auto my-16 px-8 pt-24 pb-24 rounded-md">
             <div className="relative z-[100]">
               {/* Card */}
               <div className="flex justify-between gap-16">
