@@ -31,7 +31,7 @@ const LoginNavbar = () => {
           </div>
 
           {/* Button */}
-          <NavLink to="/">
+          <NavLink to="/server/settings">
             <button
               style={{
                 filter: "drop-shadow(0px 4px 19px rgba(0, 0, 0, 0.43))",
