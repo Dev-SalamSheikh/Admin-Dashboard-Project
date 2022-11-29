@@ -341,7 +341,7 @@ const AccountContent = ({ hideandseek, hide }) => {
                   <div className="card rounded-md p-14">
                     <div className="card_content flex-col"></div>
                     <div className="relative z-[100]">
-                      <div className="w-max absolute -top-[90px] right-[50%]">
+                      <div className="w-max absolute -top-[90px] left-[44%]">
                         <img
                           src={popupclose}
                           alt=""
