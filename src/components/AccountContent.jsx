@@ -43,7 +43,7 @@ const AccountContent = ({ hideandseek, hide }) => {
   };
 
   return (
-    <div className="bg-LoginContainer w-full min-h-screen relative overflow-x-hidden z-30 flex">
+    <div className="bg-LoginContainer w-full min-h-screen relative overflow-x-hidden z-30 flex justify-between">
       {/* SIdebar */}
       <Sidebar hide={hide} />
 
