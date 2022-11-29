@@ -31,7 +31,7 @@ const ServerContent = ({ hideandseek }) => {
 
         {/* Cards */}
         <div className="content_container p-16">
-          <div className="card w-6/12 mx-auto my-16 px-16 pt-24 pb-24 rounded-md">
+          <div className="card w-7/12 mx-auto my-16 px-16 pt-24 pb-24 rounded-md">
             <div className="card_content flex-col"></div>
             <div className="relative z-[100]">
               {/* Heading */}
