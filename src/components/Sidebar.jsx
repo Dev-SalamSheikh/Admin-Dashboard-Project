@@ -115,7 +115,7 @@ const Sidebar = ({ hide }) => {
           </NavLink>
 
           {/* Secoond */}
-          <NavLink to="/">
+          <NavLink to="/account/upgrade">
             <div className="flex gap-3 items-center mx-4 px-4 py-[6px] my-2 cursor-pointer">
               <img
                 src={upgrade}

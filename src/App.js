@@ -4,6 +4,7 @@ import ServerSettings from "./pages/ServerSettings";
 import AccountSetting from "./pages/AccountSetting";
 import ServerMember from "./pages/ServerMember";
 import Blacklist from "./pages/Blacklist";
+import Upgrade from "./pages/Upgrade";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </Route>
         <Route path="/account">
           <Route path="settings" element={<AccountSetting />} />
+          <Route path="upgrade" element={<Upgrade />} />
         </Route>
       </Routes>
     </BrowserRouter>
